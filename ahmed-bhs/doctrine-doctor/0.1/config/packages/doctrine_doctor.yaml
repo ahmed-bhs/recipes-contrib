@@ -91,7 +91,7 @@ doctrine_doctor:
 #        dql_injection:
 #            enabled: true  # Detect DQL/SQL injection vulnerabilities
 #
-#        sql_injection_raw_queries:
+#        sql_injection_in_raw_queries:
 #            enabled: true  # Detect SQL injection in raw queries
 #
 #        sensitive_data_exposure:
@@ -110,22 +110,22 @@ doctrine_doctor:
 #        cascade_all:
 #            enabled: true  # Detect dangerous cascade="all"
 #
-#        cascade_persist_independent:
+#        cascade_persist_on_independent_entity:
 #            enabled: true  # Detect cascade="persist" risks
 #
-#        missing_orphan_removal:
+#        missing_orphan_removal_on_composition:
 #            enabled: true  # Detect missing orphanRemoval
 #
-#        cascade_remove_independent:
+#        cascade_remove_on_independent_entity:
 #            enabled: true  # Detect cascade="remove" risks
 #
 #        bidirectional_consistency:
 #            enabled: true  # Check bidirectional associations
 #
-#        orphan_removal_no_cascade:
+#        orphan_removal_without_cascade_remove:
 #            enabled: true  # Detect orphanRemoval without cascade
 #
-#        ondelete_mismatch:
+#        on_delete_cascade_mismatch:
 #            enabled: true  # Check ORM vs DB cascade consistency
 #
 #        foreign_key_mapping:
